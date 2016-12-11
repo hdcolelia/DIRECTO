@@ -1,0 +1,14 @@
+extends layout
+block header
+  title=title
+  each item in config.files
+    case item.tag
+      when 'link'
+        link(rel="#{item.rel}" href="#{item.href}")
+      when 'script'
+        script(type="#{item.type}" src="#{item.src}")
+      default
+        script(type="text/javascript").
+          alert("No found [#{item.tag}]");
+block content
+  p Welcome to #{title}

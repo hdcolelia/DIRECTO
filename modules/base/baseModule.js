@@ -1,7 +1,6 @@
 //base module definition
 
 class baseModule {
-
     get moduleName(){
         return this._moduleName;    
     }

@@ -1,0 +1,177 @@
+﻿/*
+HDC
+*/
+Ext.define(
+	'DIRECTO.LIB.base.components.form',
+	{
+	    extend: 'Ext.form.Panel',
+	    alias: 'formBase',
+
+	    //Configs
+	    frame: true,
+	    bodyPadding: 15,
+
+	    defaults: {
+	        anchor: '80%'
+	    },
+
+	    defaultType: 'textfield',
+
+	    //request params
+        requestUrl: '',
+	    requestController: DIRECTO.INFO.baseController,
+	    requestMethod: DIRECTO.INFO.baseMethod,
+	    requestModule: '',
+	    requestOperation: '',
+	    //actions of form
+	    requestActionLoad: 'TK_Load',
+	    requestActionSave: 'TK_Save',
+        requestModel: '',
+	    //used for calling request
+        requestParams: null,
+
+	    //constructor
+	    initComponent: function(){
+	        var me = this;
+	        //creating url - must be before to callParent
+	        me.url = me.requestUrl + '/' + me.requestController + '/' + me.requestMethod;
+
+	        //init parent
+	        me.callParent();
+
+	        me.on('actionFailed', me.requestFailed);
+
+            //Definning fields
+	        me.defineFields();
+	    },
+
+	    //setting request params
+	    setRequestParams: function(prTask, prData) {
+	        var me = this;
+	        me.requestParams = {
+	            module: me.requestModule,
+	            operation: me.requestOperation,
+	            task: prTask || me.requestActionLoad,
+	            model: me.requestModel,
+                data: prData || ''
+	        };
+	    },
+
+
+	    //overriding load
+	    load: function(prOptions) {
+	        var me = this;
+
+	        //apply task load to params
+	        me.setRequestParams(me.requestActionLoad);
+	        me.form.setConfig({ baseParams: me.requestParams });
+	        me.callParent(); 
+	    },
+
+
+	    //on request failed
+	    requestFailed: function ( prThis , prAction , prOpts) {
+	        var me = this;
+            
+	        var message = prAction.result.message;
+
+	        Ext.Msg.alert('Error on ' + prAction.failureType, message);
+	    },
+
+	    //definning fields
+	    defineFields: function(){
+	        var me = this;
+	    },
+
+	    //adding a field
+	    addField: function (prFieldConfig) {
+	        var me = this;
+            
+	    },
+
+	    setContainer: function(prContainer){
+	        var me = this;
+	        me.formContainer = prContainer;
+	    },
+
+	    //processing request
+	    processRequest: function (isApply) {
+	        var me = this;
+
+	        //verifiyng if is valid
+	        if (!me.verifyValid()) return;
+
+	        //setting request data
+	        me.baseParams = me.requestParams;
+	        me.baseParams.data = Ext.encode(me.getForm().getValues());
+
+	        me.submit(
+                {
+                    baseParams: me.baseParams,
+                    waitMsg: DIRECTO.APP.LANG.wait,
+                    success: function (form, action) {
+                        //calling after all ok
+                        //if success
+                        if (!action.result.success) {
+
+                        }
+
+                        me.submitSuccessHandler();
+                        //if is not apply then cancel
+                        if (!isApply) { me.cancelButtonPressed(); }
+                    },
+                    failure: function (form, action) {
+                        //check if change pass is required
+//                        if (action.result.changePassRequired) {
+//                            DIRECTO.APP.SECURITY.requestChangePass({
+//                                message: action.result.message,
+//                                success: function (prResponse) {
+//                                    me.submitSuccessHandler();
+//                                    //if is not apply then cancel
+//                                    if (!isApply) { me.cancelButtonPressed(); }
+//                                }
+//                            });
+//                            return;
+//                        }
+                        var message = '';
+                        //solo una prueba
+                        if (!action.result) return;
+
+
+                        if (action.result) {
+                            message = action.result.message;
+                        } else {
+                            message = action.response.responseText;
+                        }
+
+                        Ext.Msg.show({
+                            draggable: false,
+                            title: DIRECTO.APP.LANG.appResultFailure,
+                            msg: message,
+                            icon: Ext.Msg.INFO
+                        });
+                    }
+                }
+            );
+	        return;
+	    },
+
+        //verifying valid
+	    verifyValid: function () {
+	        var me = this;
+	        //verifiyng if is valid
+	        if (!me.isValid()) {
+	            Ext.Msg.show({
+	                draggable: false,
+	                title: DIRECTO.APP.LANG.invalidFormDataTitle,
+	                msg: DIRECTO.APP.LANG.invalidFormData,
+	                icon: Ext.Msg.INFO
+	            });
+	            return false;
+	        }
+	        return true;
+	    }
+
+	}
+);
+

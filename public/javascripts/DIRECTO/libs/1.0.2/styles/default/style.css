@@ -1,0 +1,305 @@
+/*Header Title*/
+.pageHeaderTitle {
+    text-align: center;
+    font: bold 50px Tahoma;
+    line-height: 48px;
+}
+
+.pageHeaderTitle div {
+    background-color: azure;
+    float: left;
+}
+
+/*Modules*/
+.moduleTitle .x-title-text {
+	font-size: 30px;
+	line-height: 35px;
+}
+
+
+.moduleTitle :hover {
+	cursor: pointer;
+}
+
+
+/*Operations*/
+.operationsView {
+    background-color: white;
+    text-shadow: #fff 0 1px 0;
+    position: relative;
+    display: block;
+    height: auto;
+}
+
+.operation {
+    float: left;
+    padding: 17px 17px;
+    margin: 5px;
+    text-align: center;
+    line-height: 14px;
+    color: #333;
+    font-size: 10px;
+    font-family: "Helvetica Neue",sans-serif;
+    height: 200px;
+    width: 154px;
+    overflow: hidden;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.operationHover {
+    border: 1px solid black;
+}
+
+.operationSelected {
+    border: 1px solid brown;
+}
+
+.operation img {
+    margin-bottom: 1px;
+}
+
+.operation strong {
+    color: #000;
+    display: block;
+}
+
+.operation span {
+    color: #999;
+}
+
+/* Header Buttons */
+.navSwitcher {
+    background-image:url(images/nav_switch.png) !important;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+.appLogo {
+    background-image:url(images/app_logo.png) !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50px;
+}
+
+.navItem {
+    height: 60px;
+    align-content:center;
+}
+.navItem-icon {
+    background-image:url(images/app_logo.png) !important;
+    background-repeat: no-repeat;
+    background-position: center center; 
+    width: 48px;
+    height: 48px;
+    line-height: 50px;
+}
+
+/* Text of tree item*/
+.x-treelist-item-text {
+    color: #000; 
+    margin-right: 0px;
+    font-size: 20px;
+    line-height: 50px;
+    text-overflow: ellipsis
+}
+.x-treelist-expander-first .x-treelist-item-text {
+    margin-left: 65px;
+    margin-right: 0
+}
+.x-treelist-item-icon,
+.x-treelist-item-tool,
+.x-treelist-item-expander {
+    line-height: 50px;
+    text-align: center
+}
+.x-treelist-item-selected > .x-treelist-row {
+    background-color: aquamarine
+}
+.x-treelist-item-selected > .x-treelist-row:hover {
+    background-color: aquamarine
+}
+
+
+/* Buttons */
+/*small*/
+.accept-small {
+    background-image:url(images/user.gif) !important
+}
+
+/*
+.x-treelist-item,
+.x-treelist-container,
+.x-treelist-root-container {
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+.x-treelist-item-tool,
+.x-treelist-row,
+.x-treelist-item-wrap {
+    position: relative
+}
+.x-treelist-item-icon,
+.x-treelist-item-expander {
+    display: none;
+    position: absolute;
+    top: 0
+}
+.x-treelist-item-expander {
+    right: 0;
+    cursor: pointer
+}
+.x-treelist-expander-only .x-treelist-item-expandable > * > .x-treelist-item-wrap > * {
+    cursor: pointer
+}
+.x-treelist-item-text {
+    cursor: default;
+    white-space: nowrap;
+    overflow: hidden
+}
+.x-treelist-item-collapsed > .x-treelist-container {
+    display: none
+}
+.x-treelist-item-expandable > * > * > .x-treelist-item-expander,
+.x-treelist-item-icon {
+    display: block
+}
+.x-treelist-item-floated > * > * > .x-treelist-item-expander,
+.x-treelist-item-floated > * > * > .x-treelist-item-icon {
+    display: none
+}
+.x-treelist-expander-first .x-treelist-item-expander {
+    left: 0;
+    right: auto
+}
+.x-treelist-toolstrip {
+    background-color: #f8f8f8
+}
+.x-treelist-item-selected > .x-treelist-row {
+    background-color: #dfe8f6
+}
+.x-treelist-item-selected > .x-treelist-row:hover {
+    background-color: #dfe8f6
+}
+.x-treelist-item-tool {
+    padding-left: 0;
+    padding-right: 6px
+}
+.x-treelist-item-icon,
+.x-treelist-item-tool,
+.x-treelist-item-expander {
+    line-height: 20px;
+    text-align: center
+}
+.x-treelist-item-icon,
+.x-treelist-item-tool {
+    color: gray;
+    font-size: 20px;
+    width: 120px
+}
+.x-treelist-item-tool {
+    width: 22px
+}
+.x-treelist-item-expander {
+    color: gray;
+    font-size: 16px;
+    width: 116px
+}
+.x-treelist-item-expander:after {
+    content: "\f0da";
+    font: 116px/1 FontAwesome
+}
+.x-treelist-item-expanded > * > * > .x-treelist-item-expander:after {
+    content: "\f0d7";
+    font: 16px/1 FontAwesome
+}
+.x-treelist-item-text {
+    color: #000; 
+    margin-left: 60px;
+    margin-right: 16px;
+    font-size: 20px;
+    line-height: 50px;
+    text-overflow: ellipsis
+}
+.x-treelist-row {
+    padding-left: 0;
+    padding-right: 6px
+}
+.x-treelist-item-floated .x-treelist-container {
+    width: auto
+}
+.x-treelist-item-floated > .x-treelist-row {
+    background-color: #f8f8f8
+}
+.x-treelist-item-floated > .x-treelist-container {
+    margin-left: -116px
+}
+.x-big .x-treelist-item-floated > .x-treelist-container {
+    margin-left: 0
+}
+.x-treelist-item-floated > * > * > .x-treelist-item-text {
+    margin-left: 0
+}
+.x-treelist-item-floated > * .x-treelist-row {
+    padding-left: 0
+}
+.x-treelist-item-floated .x-treelist-row:before {
+    width: 0
+}
+.x-treelist-item-floated > .x-treelist-row:hover {
+    background-color: #f8f8f8
+}
+.x-treelist-item-floated > .x-treelist-row:hover > * > .x-treelist-item-text {
+    color: #000
+}
+.x-treelist-item-expanded > .x-treelist-item-expander:after {
+    content: "\f0d7";
+    font: 116px/1 FontAwesome
+}
+.x-treelist-item-collapsed > * > .x-treelist-item-expander:after {
+    content: "\f0da";
+    font: 16px/1 FontAwesome
+}
+&.x-treelist-highlight-path .x-treelist-item:hover > * > .x-treelist-item-icon {
+    color: gray;
+    transition: color 0.5s
+}
+&.x-treelist-highlight-path .x-treelist-item:hover > * > .x-treelist-item-text {
+    color: #000;
+    transition: color 0.5s
+}
+&.x-treelist-highlight-path .x-treelist-item:hover > * > .x-treelist-item-expander {
+    color: gray;
+    transition: color 0.5s
+}
+.x-treelist-row:hover {
+    background-color: #efefef
+}
+.x-treelist-row:hover > * > .x-treelist-item-icon {
+    color: gray;
+    transition: color 0.5s
+}
+.x-treelist-row:hover > * > .x-treelist-item-text {
+    color: #000;
+    transition: color 0.5s
+}
+.x-treelist-row:hover > * > .x-treelist-item-expander {
+    color: gray;
+    transition: color 0.5s
+}
+.x-treelist-expander-first .x-treelist-item-icon {
+    left: 16px
+}
+.x-treelist-expander-first .x-treelist-item-text {
+    margin-left: 65px;
+    margin-right: 0
+}
+.x-treelist-expander-first .x-treelist-item-hide-icon > * > * > .x-treelist-item-text {
+    margin-left: 119px
+}
+.x-treelist-item-hide-icon > * > * > .x-treelist-item-text {
+    margin-left: 3px
+}
+*/

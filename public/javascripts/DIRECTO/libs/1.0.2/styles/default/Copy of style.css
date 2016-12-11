@@ -1,0 +1,498 @@
+/* -- Gestion CSS */
+/*Wallpaper styles*/
+.web-wallpaper {
+    background-color: #3d71b8;
+}
+
+.web-wallpaper-tiled {
+    background-repeat: repeat;
+}
+
+/*Main logo*/
+DIV.mainHeader {
+	background-color:#a0e4fe;
+	height:100%;
+	width:100%;
+	text-align:center;
+	vertical-align: middle;
+	font-size:250%;
+}
+
+.mainBackgroundLogin {
+	background-image:url(images/background.png);
+ 	background-position: right center;
+	background-repeat: no-repeat;	
+}
+
+/*User panel*/
+DIV.userPanel {
+	text-align: center;
+	background-color: gray;
+}
+.moduleItem {
+    margin-top: 3px;
+    font-size: 11px;
+    line-height: 2px;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.moduleItemHover {
+    background-color: #eee;
+}
+
+.moduleItem .x-item-selected {
+    font-weight: bold; 
+    color: #15428B;
+    background-color: #DFE8F6;
+    border: 1px dotted #A3BAE9;
+}
+
+DIV.moduleIcon a {
+	display: block;
+	border: 1px solid gray;
+	height: 50px;
+	width: 100%;
+	color: #666;
+	vertical-align: middle;
+	text-decoration: none;
+}
+
+DIV.moduleIcon a:hover {
+	border: 1px solid gray;
+	background: #E8E8E8;
+	cursor: pointer;
+}
+
+/* Table Admin Buttons */
+/* Large Buttons */
+.default-button-large{
+    background-image:url(images/default/table_admin/large/warning.png) !important;
+}
+
+.new-button-large{
+    background-image:url(images/default/table_admin/large/add.png) !important;
+}
+
+.delete-button-large{
+    background-image:url(images/default/table_admin/large/delete.png) !important;
+}
+
+.edit-button-large{
+    background-image:url(images/default/table_admin/large/edit.png) !important;
+
+}
+.refresh-button-large{
+    background-image:url(images/default/table_admin/large/refresh.png) !important;
+}
+
+/* Medium Buttons */
+.default-button-medium{
+    background-image:url(images/default/table_admin/medium/warning.png) !important;
+}
+
+.new-button-medium{
+    background-image:url(images/default/table_admin/medium/add.png) !important;
+}
+
+.delete-button-medium{
+    background-image:url(images/default/table_admin/medium/delete.png) !important;
+}
+
+.edit-button-medium{
+    background-image:url(images/default/table_admin/medium/edit.png) !important;
+
+}
+.refresh-button-medium{
+    background-image:url(images/default/table_admin/medium/refresh.png) !important;
+}
+
+/* Small Buttons */
+.default-button-small{
+    background-image:url(images/default/table_admin/small/warning.png) !important;
+}
+
+.new-button-small{
+    background-image:url(images/default/table_admin/small/add.png) !important;
+}
+
+.delete-button-small{
+    background-image:url(images/default/table_admin/small/delete.png) !important;
+}
+
+.edit-button-small{
+    background-image:url(images/default/table_admin/small/edit.png) !important;
+
+}
+.refresh-button-small{
+    background-image:url(images/default/table_admin/small/refresh.png) !important;
+}
+
+/* Others */
+.refresh-32x32{
+    background-image:url(images/refresh_32x32.png) !important;
+
+}
+
+.update-32x32{
+    background-image:url(images/update_32x32.png) !important;
+
+}
+.update-16x16{
+    background-image:url(images/update_16x16.png) !important;
+
+}
+.delete-16x16{
+    background-image:url(images/delete_16x16.png) !important;
+
+}
+
+.update-language{
+    background-image:url(images/update_lang_32x32.png) !important;
+
+}
+
+.search-node{
+    background-image:url(images/search.gif) !important;
+}
+
+/*
+* Classess for view status of record on grid
+*/
+.row-processing{
+    background-image:url(../images/default/grid/wait.gif) !important;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+.row-ok{
+    background-image:url(../images/others/recordok.png) !important;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+.row-deleting{
+    background-image:url(../images/others/recorddeleted.png) !important;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+
+/*Module options*/
+.module-option {
+    padding: 0 3px 0 3px;
+}
+
+.module-option-item {
+    font-weight: bold;
+    margin-top: 3px;
+    padding-left: 2px;
+    font-size: 11px;
+    line-height: 20px;
+    cursor: pointer;
+    border: 1px solid #fff;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.module-option-item img{
+    height: 24px;
+	width: 24px;
+	float: left;
+}
+
+.module-option-item div{
+	padding-left: 28px;
+}
+
+.module-option .x-item-selected {
+    font-weight: bold; 
+    color: #15428B;
+    background-color: #DFE8F6;
+    border: 1px dotted #A3BAE9;
+}
+
+.module-option-item-hover {
+    background-color: #eee;
+}
+
+
+/*File Browser Selector*/
+.filebrowser-file {
+    float: left;
+    margin: 1px;
+    margin-right: 0;
+    padding: 2px;
+}
+
+.filebrowser-file-item {
+    margin-top: 3px;
+    /*padding-left: 5px;*/
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 27px;
+	border: thin solid transparent;
+}
+
+.filebrowser-file-item-selected {
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 27px;
+	border: thin solid black;
+    /*background-color: #82FA58;*/
+}
+
+.filebrowser-file-item-hover {
+    /*background-color: #D8F781;*/
+    border: thin dotted black;
+    cursor: pointer;
+}
+
+.filebrowser-file-item img{
+    height: 60px;
+    width: 60px;
+    vertical-align: middle;
+}
+
+/* Icon for toolbar buttons */
+/* Login panel */
+.loginButton {
+    background-image:url(images/default/user_panel_24x24/login.png) !important
+}
+.logoffButton {
+    background-image:url(images/default/user_panel_24x24/logoff.png) !important
+}
+.changePwdButton {
+    background-image:url(images/default/user_panel_24x24/change_pwd.png) !important
+}
+.userInfoButton {
+    background-image:url(images/default/user_panel_24x24/user_info.png) !important
+}
+
+/* Icon for toolbar buttons - large */
+.cancel-large {
+    background-image:url(images/default/button/large/cancel.png) !important
+}
+.ok-large {
+    background-image:url(images/default/button/large/ok.png)  !important
+}
+
+.add-large {
+    background-image:url(images/default/button/large/ok.png)  !important
+}
+
+/* Icon for toolbar buttons - medium */
+.cancel-medium {
+    background-image:url(images/default/button/medium/cancel.png) !important
+}
+.ok-medium {
+    background-image:url(images/default/button/medium/ok.png)  !important
+}
+
+.add-medium {
+    background-image:url(images/default/button/large/ok.png)  !important
+}
+
+
+/* Icon for toolbar buttons - small */
+.cancel-small {
+    background-image:url(images/default/button/small/cancel.png) !important
+}
+.ok-small {
+    background-image:url(images/default/button/small/ok.png)  !important
+}
+
+.add-small {
+    background-image:url(images/default/button/large/ok.png)  !important
+}
+
+
+/* Icon for toolbar buttons */
+/* Config panel */
+.logButton {
+    background-image:url(images/default/config_panel_24x24/log.png) !important
+}
+.styleButton {
+    background-image:url(images/default/config_panel_24x24/style.png) !important
+}
+.configButton {
+    background-image:url(images/default/config_panel_24x24/config.png) !important
+}
+
+
+
+/*Buttons and nodes images*/
+/* Used in default image button in JSERP.MODELS.selectImageField */
+.default_image_button {
+	background-image: url(images/icons/default_image_button.ico) !important;
+}
+/* Used in search image button in JSERP.MODELS.selectImageField */
+.search_image_button {
+	background-image: url(images/icons/search_image_button.gif) !important;
+}
+/* Used in folder tree nodes in JSERP.MODELS.fileExplorerPanel */
+/* returned by controller_tools.php::getDirectory */
+.explorer_folder {
+	background-image: url(images/folder.gif) !important;
+}
+
+
+*.unselectable { 
+   -moz-user-select: -moz-none; 
+   -webkit-user-select: none; 
+ 
+   /* 
+     Introduced in IE 10. 
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/ 
+   */ 
+   -ms-user-select: none; 
+   user-select: none; 
+} 
+
+
+/* Productos */
+select{
+    font-size:11px;
+}
+.image-tip{
+    padding:4px;
+    height:98px;
+    white-space:nowrap;
+}
+.image-tip img {
+    margin-right:10px;
+    border:2px solid #083772;
+}
+.image-tip b{
+    color: #083772;
+    display: block;
+    margin-bottom: 4px;
+}
+.image-tip span{
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.x-image-view{
+    font: 11px Arial, Helvetica, sans-serif;
+}
+.x-image-view .thumb{
+    padding:3px;
+}
+
+.x-image-view .thumb-wrap{
+    float: left;
+    margin: 4px;
+    margin-right: 0;
+    padding: 5px;
+}
+.x-image-view .thumb-wrap span{
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    width: 76px; /* for ie to ensure that the text is centered */
+}
+.x-image-view .x-item-selected .thumb {
+    background:#8db2e3;
+}
+.x-image-view .loading-indicator {
+    font-size:8pt;
+    background-image:url(../../resources/images/default/grid/loading.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left:20px;
+    margin:10px;
+}
+.x-dd-drag-proxy .multi-proxy .thumb-img{
+    height: 20px;
+    width: 30px;
+    margin:1px;
+}
+.x-dd-drag-proxy .thumb-img{
+    height: 60px;
+    width: 80px;
+}
+.image-node .x-tree-node-icon{
+    margin-bottom:1px;
+    height:15px;
+}
+.album-node .x-tree-node-icon, .album-btn{
+    background-image:url( ../tree/album.gif ) !important;
+}
+
+.x-dataview-draggable-ghost img {
+    width: 20px;
+    margin: 0 5px 5px 0;
+}
+
+
+/* Para la página principal*/
+
+#mainOptions {
+    background-color: #fff;
+    text-shadow: #fff 0 1px 0;
+    position: relative;
+    display: block;
+    height: auto;
+}
+
+#mainOptions div.mainOption img {
+    margin-bottom: 1px;
+}
+
+#mainOptions div.mainOption {
+    float: left;
+    padding: 30px 17px;
+    margin: 5px;
+    text-align: center;
+    line-height: 14px;
+    color: #333;
+    font-size: 10px;
+    font-family: "Helvetica Neue",sans-serif;
+    height: 180px;
+    width: 140px;
+    overflow: hidden;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+}
+
+#mainOptions div.mainOption {
+    border-top: none;
+    padding: 3px 2px;
+    margin: 2px;
+}
+
+#mainOptions div.mainOption-hover {
+    background-color: #eee;
+}
+
+#mainOptions .x-item-selected {
+    background-color: #D3E1F1 !important;
+}
+
+#mainOptions div.mainOption strong {
+    color: #000;
+    display: block;
+}
+
+#mainOptions div.mainOption span {
+    color: #999;
+}
+
+
+/*Header Text*/
+#app-header {
+    color: #596F8F;
+    font-size: 24px;
+    font-weight: 200;
+    padding: 8px 15px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+
+/*Editor de Código*/
+#aceEditor { 
+    margin: 0;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+}

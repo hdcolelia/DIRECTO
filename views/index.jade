@@ -1,5 +1,14 @@
 extends layout
+block header
+  title=title
 
+  script(type="text/javascript" src="javascripts/extjs/#{config.extjsVersion}/build/ext-all-debug.js") 
+  link(rel="stylesheet" href="javascripts/extjs/#{config.extjsVersion}/build/classic/#{config.extjsTheme}/resources/#{config.extjsTheme}-all.css") 
+  script(type="text/javascript" src="javascripts/extjs/#{config.extjsVersion}/build/classic/#{config.extjsTheme}/#{config.extjsTheme}.js") 
+
+  link(rel="stylesheet" href="javascripts/DIRECTO/libs/#{config.appVersion}/styles/#{config.appTheme}/style.css")
+  link(rel="stylesheet" href="javascripts/DIRECTO/apps/#{config.appName}/style/style.css")
+  script(type="text/javascript" src="javascripts/DIRECTO/initOverrides.js")
+  script(type="text/javascript" src="javascripts/DIRECTO/initDIRECTO.js")
 block content
-  h1= title
-  p Welcome to #{title}
+

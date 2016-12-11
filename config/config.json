@@ -1,0 +1,8 @@
+{
+    "view" : "index", 
+    "extjsVersion" : "ext-6.2.0",
+    "extjsTheme" : "theme-triton",
+    "appVersion" : "1.0.2",
+    "appName" : "dashboard",
+    "appTheme" : "dashboard"
+}

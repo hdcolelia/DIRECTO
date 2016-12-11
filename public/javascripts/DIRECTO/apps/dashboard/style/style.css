@@ -1,0 +1,29 @@
+/*Header*/
+.pageHeader {
+	background:#cbc734; 
+}
+.pageHeaderTitle {
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 78px;
+}
+
+.pageHeaderTitle div {
+	font-size: 18px !important;
+	color: white;
+	background: #00CCFF;
+}
+
+.pageHeaderTitle img {
+	vertical-align: middle;
+}
+
+/*Header button*/
+.headerButton {
+	background:#cbc734;
+}
+.headerButtonOver {
+ border-color:#1c2be3;
+ border: 2px !important;
+   	 
+}
